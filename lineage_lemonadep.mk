@@ -14,6 +14,18 @@ $(call inherit-product, device/oneplus/lemonadep/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_BLUR := true
+
+EXTRA_UDFPS_ANIMATIONS := true
+WITH_GAPPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+HAVOC_BUILD_TYPE := Official
+HAVOC_MAINTAINER := eduardo
+HAVOC_GROUP_URL := https://t.me/NeoTheSavage
+
 PRODUCT_NAME := lineage_lemonadep
 PRODUCT_DEVICE := lemonadep
 PRODUCT_MANUFACTURER := OnePlus
